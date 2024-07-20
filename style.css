@@ -1,0 +1,222 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: "Roboto Slab", serif;
+}
+#container{
+    width: 100%;
+    height: 100vph;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 700;
+}
+li a:hover{
+    color: red;
+    
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#download:hover{
+    color: orange;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+#title h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+#title a{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#images{
+    
+    width: 30%;
+    height: 70%;
+    position: absolute;
+    bottom: 70px;
+    right: 60px;
+}
+.imgrp{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+#images:hover #bac{
+    bottom: 70px;
+
+}
+#images:hover #fro{
+    left: 30%;
+}
+#about{
+    margin: 15% 8% 0% 8%;   
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+} 
+.heading p{
+    font-size: 25px;
+    color: green;
+} 
+#content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#content_image img{
+    width: 50%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+}
+#informations{
+    margin-top: 2rem;
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 1rem;
+}
+#skills{
+    margin: 15% 8% 0% 8%;
+}
+#skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+#skill_image img{
+    width: 80%;
+    padding-left: 80px;
+    margin-top: 100px;
+}
+.bar_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+.bar_container span{
+    font-weight: 700;
+}
+.bartop{
+    width: 90%;
+    height: .5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#html{
+    width: 80%;
+    background-color: orange;
+}
+#css{
+    width: 78%;
+    background-color: orange;
+}
+#sql{
+    width: 80%;
+    background-color: orange;
+}
+#python{
+    width: 70%;
+    background-color: orange;
+}
+#contact{
+    margin: 15% 8% 0% 8%;
+}
+.iconset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon, .uparrow{
+    width: 50px;
+    height: 50px;
+    margin: 0px 13px ;
+    /* border: 1px solid red; */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.icon i{
+    color: black;
+    animation: shake .75s;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgb(255, 134, 6));
+    animation: shake .75s;
+}
+.icon:hover i{
+    color: white;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 5% 0% 0% 0%;
+}
+footer p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.uparrow{
+    background-image: linear-gradient(to bottom right,yellow,rgb(255, 134, 6));
+    float: right;
+}
+html{
+    scroll-behavior: smooth;
+}
